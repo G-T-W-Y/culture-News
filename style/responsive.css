@@ -38,15 +38,8 @@
     /*REVIEWS*/
 
     .promo::before {
-        position: absolute;
-        content: "";
-        width: 600px;
-        height: 600px;
-        border-radius: 50%;
-        background-color: #fff;
         top: 20px;
         left: 20px;
-        z-index: 0;
     }
 
     /*FOOTER*/
@@ -61,15 +54,8 @@
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     .promo::before {
-        position: absolute;
-        content: "";
-        width: 600px;
-        height: 600px;
-        border-radius: 50%;
-        background-color: #fff;
         top: -20px;
         left: 80px;
-        z-index: 0;
     }
 }
 
@@ -79,14 +65,14 @@
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
     .promo::before {
-        position: absolute;
-        content: "";
-        width: 600px;
-        height: 600px;
-        border-radius: 50%;
-        background-color: #fff;
         top: -20px;
         left: 330px;
-        z-index: 0;
+    }
+}
+
+@media only screen and (min-width: 1900px) {
+    .promo::before {
+        top: -20px;
+        left: 650px;
     }
 }
