@@ -1,0 +1,92 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    /*HEADER*/
+
+    .main-header {
+        margin-top: 20px;
+    }
+
+    .main-header img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .navbar {
+        padding: .5rem 0;
+    }
+
+    ul.site-navigation {
+        margin-top: 0;
+    }
+
+    /*HEADLINE*/
+
+
+    .headline {
+        margin-top: 0;
+    }
+
+    .headline p {
+        margin-top: 40px;
+    }
+
+    .headline h2 {
+        font-size: 32px;
+    }
+
+    /*REVIEWS*/
+
+    .promo::before {
+        position: absolute;
+        content: "";
+        width: 600px;
+        height: 600px;
+        border-radius: 50%;
+        background-color: #fff;
+        top: 20px;
+        left: 20px;
+        z-index: 0;
+    }
+
+    /*FOOTER*/
+    ul.footer-navigation {
+        display: none;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .promo::before {
+        position: absolute;
+        content: "";
+        width: 600px;
+        height: 600px;
+        border-radius: 50%;
+        background-color: #fff;
+        top: -20px;
+        left: 80px;
+        z-index: 0;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .promo::before {
+        position: absolute;
+        content: "";
+        width: 600px;
+        height: 600px;
+        border-radius: 50%;
+        background-color: #fff;
+        top: -20px;
+        left: 330px;
+        z-index: 0;
+    }
+}
