@@ -20,40 +20,21 @@ ul {
 	padding: 0;
 }
 
-/*HEADER*/
-
-.main-header {
-	width: 100%;
-	margin-top: 46px;
-}
-
-.main-header img {
-	display: flex;
-	justify-content: center;
-	margin: 0 auto;
-}
-
-ul.site-navigation {
-	display: flex;
-	justify-content: space-between;
-	margin: 0 auto;
-	margin-top: 50px;
-	padding: 0;
-}
-
-ul.site-navigation li {
+li {
 	list-style: none;
 }
 
-ul.site-navigation li a {
-	text-decoration: none;
-	color: #000;
-	text-transform: uppercase;
-	transition: 1s;
+/*HEADER*/
+
+.main-header,
+.site-navigation {
+	margin-top: 50px;
 }
 
-ul.site-navigation li a:hover {
-	color: #ff7931;
+
+.site-navigation li a {
+	text-transform: uppercase;
+	transition: 1s;
 }
 
 /*MAIN*/
@@ -65,7 +46,6 @@ ul.site-navigation li a:hover {
 /*HEADLINE*/
 
 .headline {
-	width: 100%;
 	min-height: 466px;
 	background-image: url("../img/underwater-hotel.jpg");
 	background-size: cover;
@@ -111,14 +91,6 @@ ul.site-navigation li a:hover {
 	text-transform: uppercase;
 }
 
-ul.reviews-list {
-	justify-content: space-between;
-}
-
-
-ul.reviews-list li{
-	list-style: none;
-}
 
 ul.reviews-list li a {
 	text-decoration: none;
@@ -147,6 +119,18 @@ ul.reviews-list li a:hover {
 	z-index: 5;
 }
 
+.promo::before {
+        position: absolute;
+        content: "";
+        width: 600px;
+        height: 600px;
+        border-radius: 50%;
+        background-color: #fff;
+        top: -20px;
+        left: 650px;
+        z-index: 0;
+    }
+
 .promo h2 {
 	position: relative;
 	margin-top: 20px;
@@ -155,10 +139,6 @@ ul.reviews-list li a:hover {
 ul.promo-list {
 	position: relative;
 	
-}
-
-ul.promo-list li {
-	list-style: none;
 }
 
 ul.promo-list h3 {
@@ -191,9 +171,6 @@ ul.promo-list p {
 .main-footer {
 
 	position: relative;
-	display: flex;
-	text-align: center;
-	max-height: 300px;
 	background-color: #575757;
 	z-index: 10;
 }
@@ -203,14 +180,7 @@ ul.promo-list p {
 }
 
 ul.footer-navigation {
-	display: flex;
-	justify-content: space-between;
 	margin-top: 30px;
-	padding: 0;
-}
-
-ul.footer-navigation li {
-	list-style: none;
 }
 
 ul.footer-navigation li a {
@@ -221,11 +191,6 @@ ul.footer-navigation li a {
 
 ul.footer-navigation li a:hover {
 	color: #ff7931;
-}
-
-ul.social-list {
-	display: flex;
-	justify-content: center;
 }
 
 ul.social-list li {
