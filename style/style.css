@@ -178,6 +178,7 @@ ul.promo-list p {
 }
 
 ul.footer-navigation {
+	display: flex;
 	margin-top: 30px;
 }
 
